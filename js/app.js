@@ -58,7 +58,7 @@ const chiropractors = [
       "id": "1",
       "name": "Dr. Taylor Ptacek",
       "title": "Sports Chriopractor",
-      "headshot": '../imgs/kinetic-assets/taylor-ptacek-headshot.png',
+      "headshot": './imgs/kinetic-assets/taylor-ptacek-headshot.png',
       "education": [
         "B.S., Kinesiology and Human Performance",
         "Doctor of Chiropractic Medicine,",
@@ -71,7 +71,7 @@ const chiropractors = [
       "id": "2",
       "name": "Kat Sanders",
       "title": "Licensed Massage Therapist",
-      "headshot": '../imgs/kinetic-assets/kat-modal.png',
+      "headshot": './imgs/kinetic-assets/kat-modal.png',
       "education": [
         "The Denver School of Massage Therapy"
       ],
