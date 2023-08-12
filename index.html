@@ -116,9 +116,11 @@
         <div class="faq-accordion container-right" data-services-item-cont>
           <template data-services-item>
             <div class="accordion-item">
-              <button class="accordion-btn flex space-bt" data-services-item-btn aria-expanded="false">
-                <h3 class="letter-n1" data-services-item-title></h3>
-                <img class='chevron-img' src="imgs/kinetic-assets/chevron.svg" alt="chevron icon">
+              <button class="accordion-btn " data-services-item-btn aria-expanded="false">
+                <div class="__wrap flex align-center space-bt">
+                  <h3 class="letter-n1" data-services-item-title></h3>
+                  <img class='chevron-img' src="imgs/kinetic-assets/chevron.svg" alt="chevron icon">
+                </div>
               </button>
               <div class="accordion-content">
                 <p data-services-item-desc></p>
@@ -243,7 +245,7 @@
         <div class="faq-container-text">
           <h2 class="letter-n1">What would you like to know about us?</h2>
           <!-- TODO add contact href -->
-          <a class="btn-styles flex align-center white">
+          <a class="btn-styles flex align-center white" href="#contact">
             <span>Contact us</span>
           </a>
           <img loading="lazy" src="imgs/kinetic-assets/line.svg" alt="pulse line">
@@ -290,12 +292,12 @@
           <div class="contact-item">
             <h3 class="flex align-center"><img src="imgs/kinetic-assets/phone.svg" alt="phone icon">Contact us</h3>
             <div class="contact-item-info">
-              <p class="margin-bottom-26"><span>Call / Text: </span>(303) 476-2454</p>
-              <p><span>Email: </span>drtaylor@kineticsmr.com</p>
+              <p class="margin-bottom-26"><span>Call / Text: </span><a href="tel:3034762454">(303) 476-2454</a></p>
+              <p><span>Email: </span><a href="mailto:drtaylor@kineticsmr.com">drtaylor@kineticsmr.com</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <h3 class="flex"><img src="imgs/kinetic-assets/social.svg" alt="social icon">Our socials</h3>
+            <h3 class="flex align-center"><img src="imgs/kinetic-assets/social.svg" alt="social icon">Our socials</h3>
             <div class="contact-item-info">
               <ul>
                 <li><a href="https://www.facebook.com/kineticsportsclinic/">Facebook</a></li>
@@ -353,7 +355,7 @@
       </div>
       <main class="main-container">
         <div class="chiropractor-container">
-          <div class="modal-img-container centered">
+          <div class="modal-img-container">
             <img class="centered" src="" alt="" data-name="modal-img">
           </div>
           <div class="info-container flex">

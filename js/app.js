@@ -57,7 +57,7 @@ const chiropractors = [
   {
       "id": "1",
       "name": "Dr. Taylor Ptacek",
-      "title": "Sports Chriopractor",
+      "title": "Sports Chiropractor",
       "headshot": './imgs/kinetic-assets/taylor-ptacek-headshot.png',
       "education": [
         "B.S., Kinesiology and Human Performance",
