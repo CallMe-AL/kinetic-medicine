@@ -217,7 +217,7 @@ select {
 }
 
 .btn-styles:hover {
-  background-color: hsl( var(--btn-blue) / 0.5 );
+  background-color: var(--blue-hover);
 }
 
 .btn-styles img {
@@ -505,6 +505,10 @@ select {
   margin-block: 1.5rem;
 }
 
+.accordion-btn .__wrap h3 {
+  letter-spacing: -0.5px;
+}
+
 .accordion-btn .chevron-img {
   transform: rotate(0);
   transition: transform 400ms ease-in-out;
@@ -551,6 +555,7 @@ select {
 .page-section.team .sec-mw > p:first-of-type {
   color: var(--off-black);
   display: none;
+  width: 75ch;
 }
 
 .headshots-container {
@@ -869,6 +874,15 @@ select {
 
 .contact-info-container .contact-item .contact-item-info p span {
   font-weight: 600;
+}
+
+.contact-info-container .contact-item .contact-item-info p a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-info-container .contact-item .contact-item-info p a:hover {
+  text-decoration: underline;
 }
 
 .contact-info-container .contact-item .contact-item-info ul {

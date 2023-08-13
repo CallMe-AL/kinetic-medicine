@@ -270,6 +270,12 @@ const populateServices = () => {
 
     servicesItemCont.append(item);
   });
+
+  // leave first services accordion open by default
+  // keep aria-expanded after setting height because different styles apply when aria-expanded is true
+  const firstAccordion = document.querySelector('.accordion-btn[data-id="1"]');
+  expandAccordion(firstAccordion.nextElementSibling);
+  firstAccordion.setAttribute('aria-expanded', 'true');
 }
 
 const populateFaqs = () => {
@@ -351,7 +357,6 @@ headshotImgConts.forEach(cont => {
 overlay.addEventListener('click', closeModal);
 closeBtn.addEventListener('click', closeModal);
 
-window.addEventListener('load', () => {
-  shrinkAccordions();
-  populateAccordions();
+window.addEventListener('DOMContentLoaded', () => {
+  populateAccordions();  
 });
