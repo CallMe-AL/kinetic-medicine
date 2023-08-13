@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   --primary-font: 'Inter', sans-serif;
@@ -251,7 +251,7 @@ select {
 }
 
 .sec-mw h2 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: var(--fs-700);
   line-height: 1.2;
   margin-bottom: 2rem;
@@ -461,11 +461,6 @@ select {
   z-index: 50;  
 }
 
-/* .services-faq .img-container img {
-  width: 100%;
-  border-radius: 15px;
-} */
-
 @media (min-width: 1000px) {
   .services-subhead .btn-styles {
     display: flex;
@@ -507,6 +502,7 @@ select {
 
 .accordion-btn .__wrap h3 {
   letter-spacing: -0.5px;
+  font-weight: 300;
 }
 
 .accordion-btn .chevron-img {
@@ -515,7 +511,7 @@ select {
 }
 
 .accordion-btn h3 {
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
 }
 
@@ -543,6 +539,7 @@ select {
 .accordion-content p {
   line-height: 24px; 
   padding-block: 1.5rem;
+  color: #E2E9F5;
 }
 
 /* ---------------- */
@@ -554,8 +551,7 @@ select {
 
 .page-section.team .sec-mw > p:first-of-type {
   color: var(--off-black);
-  display: none;
-  width: 75ch;
+  max-width: 75ch;
 }
 
 .headshots-container {
@@ -586,16 +582,9 @@ select {
 }
 
 @media (min-width: 800px) {
-
   .headshots-container {
     flex-direction: row;
     gap: 1.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-section.team .sec-mw>p:first-of-type {
-    display: block;
   }
 }
 
