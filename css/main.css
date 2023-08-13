@@ -414,7 +414,7 @@ select {
 }
 
 .services-faq {
-  gap: 7rem;
+  gap: clamp(4rem, 6vw, 7rem);
 }
 
 .services-faq > * {
@@ -466,7 +466,7 @@ select {
   border-radius: 15px;
 } */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .services-subhead .btn-styles {
     display: flex;
   } 
