@@ -16,6 +16,7 @@
   /* --blue-main: linear-gradient(180deg, #206BF6 0%, #1F67EC 100%); */
   --blue-main: #1F67EC;
   --btn-blue: 219 84% 52%;
+  /* --btn-blue: #1e66eb; */
   --blue-hover: #185BD6;
   --blue-text: #2069F0;
   --off-blue: #4d8bff;
@@ -394,7 +395,7 @@ select {
   content: '';
   width: 100%;
   height: 50px;
-  top: 0px;
+  top: -3px;
   left: 0;
   border-bottom-left-radius: 48px;
   border-bottom-right-radius: 48px;

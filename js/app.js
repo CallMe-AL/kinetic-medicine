@@ -2,18 +2,18 @@ const headshotImgConts = document.querySelectorAll('.headshot-img-container');
 const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.close-btn');
 
-const servicesItems = [
+const servicesItems = [  
   {
     "id": 1,
-    "service": "Massage Therapy",
-    "desc": "Massage therapy is a type of treatment in which a trained and certified massage therapist manipulates the soft tissues of your body. Massage therapy can help relieve musculoskeletal pain, increase circulation, decrease muscle tension, reduce stress, rehabilitate sports injuries, as well as provide relaxation and aid in general wellness.",
-    "img": "../imgs/services-imgs/min/massage-therapy-v2.png"
-  },
-  {
-    "id": 2,
     "service": "Sports Chiropractic",
     "desc": "Sports chiropractors focus their care on the relationship between joint restrictions and their resulting effect on movement throughout the rest of the body. This requires a comprehensive understanding of biomechanics in order to understand and treat joint restrictions in the spine and extremities with modern, research-based chiropractic techniques.",
     "img": "../imgs/services-imgs/min/sports-chiro.png"
+  },
+  {
+    "id": 2,
+    "service": "Massage Therapy",
+    "desc": "Massage therapy is a type of treatment in which a trained and certified massage therapist manipulates the soft tissues of your body. Massage therapy can help relieve musculoskeletal pain, increase circulation, decrease muscle tension, reduce stress, rehabilitate sports injuries, as well as provide relaxation and aid in general wellness.",
+    "img": "../imgs/services-imgs/min/massage-therapy-v2.png"
   },
   {
     "id": 3,
