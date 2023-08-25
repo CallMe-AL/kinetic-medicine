@@ -359,4 +359,8 @@ closeBtn.addEventListener('click', closeModal);
 
 window.addEventListener('DOMContentLoaded', () => {
   populateAccordions();  
+  // clears hash and scrolls to top of page if user clicked to go to a certain section
+  // behavior we want?
+  history.replaceState(null, ' ', ' ');
+  window.scrollTo(0, 0);
 });
