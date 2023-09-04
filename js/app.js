@@ -148,8 +148,6 @@ const shrinkAccordions = () => {
 
 const addFaqListeners = () => {
   const accordionBtns = document.querySelectorAll('.accordion-btn');
-  const accordionContent = document.querySelectorAll('.accordion-content');
-  const accordionSection = document.querySelector('.faq-accordion');
 
   accordionBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -202,19 +200,6 @@ const populateServices = () => {
     desc.textContent = i.desc;
     btn.setAttribute('data-id', `${i.id}`);
 
-    // btn.addEventListener('click', () => {
-    //   const servicesImg = document.querySelector('[data-services-img]');
-    //   const id = i.id;
-
-    //   const clickedService = servicesItems.find(service => service.id === id);
-    //   if (!clickedService) return;
-    //   const servicesImgPath = clickedService.img;
-
-    //   servicesImg.src = servicesImgPath;
-    //   servicesImg.alt = clickedService.service + ' image';
-
-    // });
-
     btn.addEventListener('click', () => {
       const servicesImgs = document.querySelectorAll('[data-services-img-id]');
       const mainImg = document.querySelector('.services-img.main-img');
@@ -258,14 +243,7 @@ const populateServices = () => {
         if (imgId == id) {    
           img.classList.add('active');
         }
-      })
-      // const clickedService = servicesItems.find(service => service.id === id);
-      // if (!clickedService) return;
-      // const servicesImgPath = clickedService.img;
-
-      // servicesImg.src = servicesImgPath;
-      // servicesImg.alt = clickedService.service + ' image';
-
+      });
     });
 
     servicesItemCont.append(item);
