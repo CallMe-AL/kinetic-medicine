@@ -315,6 +315,15 @@ select {
   gap: 0.6rem;
 }
 
+.bottom-hero > .ratings-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.bottom-hero > .ratings-container a:hover {
+  text-decoration: underline;
+}
+
 .ratings-container .stars-container {
   gap: 0.25rem;
 }
@@ -491,8 +500,12 @@ select {
   transition: border-bottom 200ms ease-in-out;
 }
 
-.accordion-item:first-child .accordion-btn {
+.accordion-item:first-of-type .accordion-btn {
   padding-top: 0rem;
+}
+
+.accordion-item:first-of-type .accordion-content {
+  height: auto;
 }
 
 .accordion-btn .__wrap {
@@ -537,8 +550,8 @@ select {
 
 .accordion-content p {
   line-height: 24px; 
-  padding-block: 1.5rem;
   color: #E2E9F5;
+  padding-block: 1.5rem;
 }
 
 /* ---------------- */
@@ -559,13 +572,23 @@ select {
   flex-direction: column;
 }
 
+.headshot-container {
+  flex: 1;
+} 
+
 .headshot-img-container {
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .headshot-container .headshot-img-container {
   margin-bottom: 2rem;
   cursor: pointer;
+} 
+
+.headshot-container .headshot-img-container img {
+  height: auto;
+  width: 100%;
 }
 
 .headshot-container > h3 {
@@ -666,7 +689,7 @@ select {
   min-height: 10rem;
 }
 
-.main-container h2 {
+.main-container h3 {
   font-weight: 500;
   font-size: 1.125rem;
   color: #2f2f2e;
@@ -691,7 +714,7 @@ select {
   flex-direction: column;
 }
 
-.chiropractor-container .info-container h1 {
+.chiropractor-container .info-container h2 {
   font-weight: 400;
   font-size: var(--fs-650);
   color: #2f2f2e;

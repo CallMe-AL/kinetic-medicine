@@ -134,7 +134,7 @@ const faqQuestions = [
 ]
 
 const expandAccordion = (accordion) => {
-  const contentHeight = accordion.children[0].offsetHeight;
+  let contentHeight = accordion.children[0].offsetHeight;
   accordion.setAttribute('style', 'height: ' + contentHeight + 'px')
 }
 
@@ -249,11 +249,13 @@ const populateServices = () => {
     servicesItemCont.append(item);
   });
 
-  // leave first services accordion open by default
+  // leave first services accordion open by default, 500ms delay to allow html to load first
   // keep aria-expanded after setting height because different styles apply when aria-expanded is true
-  const firstAccordion = document.querySelector('.accordion-btn[data-id="1"]');
-  expandAccordion(firstAccordion.nextElementSibling);
-  firstAccordion.setAttribute('aria-expanded', 'true');
+  setTimeout(() => {
+    const firstAccordion = document.querySelector('.accordion-btn[data-id="1"]');
+    expandAccordion(firstAccordion.nextElementSibling);
+    firstAccordion.setAttribute('aria-expanded', 'true');    
+  }, 500);
 }
 
 const populateFaqs = () => {
