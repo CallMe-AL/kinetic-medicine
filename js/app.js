@@ -114,7 +114,7 @@ const faqQuestions = [
   {
     "id": 7,
     "question": "Do you offer discounted rates?",
-    "answer": "Yes, we offer a 10% reduced rate for all veteran and active duty military as well as first responders such as police, fire, and EMT.",
+    "answer": "We partner with sports teams, gyms, and other local businesses. Email for opportunities to partner or see if you're in one of the groups.",
   },
   {
     "id": 8,
@@ -341,6 +341,6 @@ window.addEventListener('DOMContentLoaded', () => {
   populateAccordions();  
   // clears hash and scrolls to top of page if user clicked to go to a certain section
   // behavior we want?
-  history.replaceState(null, ' ', ' ');
-  window.scrollTo(0, 0);
+  // history.replaceState(null, ' ', ' ');
+  // window.scrollTo(0, 0);
 });
