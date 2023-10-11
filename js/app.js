@@ -11,8 +11,8 @@ const servicesItems = [
   },
   {
     "id": 2,
-    "service": "Massage Therapy",
-    "desc": "Massage therapy is a type of treatment in which a trained and certified massage therapist manipulates the soft tissues of your body. Massage therapy can help relieve musculoskeletal pain, increase circulation, decrease muscle tension, reduce stress, rehabilitate sports injuries, as well as provide relaxation and aid in general wellness.",
+    "service": "Sports Massage",
+    "desc": "Sports massage therapy is a type of treatment in which a trained and certified massage therapist manipulates the soft tissues of your body. A sports massage can help relieve musculoskeletal pain, increase circulation, decrease muscle tension, reduce stress, rehabilitate sports injuries, as well as provide relaxation and aid in general wellness.",
     "img": "../imgs/services-imgs/min/massage-therapy-v2.png"
   },
   {
@@ -339,8 +339,4 @@ closeBtn.addEventListener('click', closeModal);
 
 window.addEventListener('DOMContentLoaded', () => {
   populateAccordions();  
-  // clears hash and scrolls to top of page if user clicked to go to a certain section
-  // behavior we want?
-  // history.replaceState(null, ' ', ' ');
-  // window.scrollTo(0, 0);
 });
