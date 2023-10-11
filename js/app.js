@@ -330,8 +330,8 @@ const closeModal = (e) => {
   }
 }
 
-headshotImgConts.forEach(cont => {
-  cont.addEventListener('click', openModal);
+headshotImgConts.forEach(container => {
+  container.addEventListener('click', openModal);
 });
 
 overlay.addEventListener('click', closeModal);
